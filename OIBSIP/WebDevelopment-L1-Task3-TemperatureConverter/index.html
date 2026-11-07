@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temperature Converter — Celsius, Fahrenheit &amp; Kelvin</title>
+  <meta name="description" content="A simple, accessible temperature converter for Celsius, Fahrenheit and Kelvin with input validation and absolute-zero warnings." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <main class="page">
+    <div class="converter">
+
+      <!-- ---------- Header ---------- -->
+      <header class="converter-head">
+        <div class="badge">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M10 13.5V5a2 2 0 1 1 4 0v8.5a4.5 4.5 0 1 1-4 0Z" />
+            <path d="M12 9v5" />
+          </svg>
+          Temperature
+        </div>
+        <h1>Temperature Converter</h1>
+        <p class="subtitle">
+          Convert between Celsius, Fahrenheit and Kelvin. All three results update at once.
+        </p>
+      </header>
+
+      <!-- ---------- Form ---------- -->
+      <form class="converter-form" id="converter-form" novalidate>
+        <div class="field field-value">
+          <label for="temperature">Temperature</label>
+          <input
+            type="text"
+            id="temperature"
+            name="temperature"
+            inputmode="decimal"
+            autocomplete="off"
+            placeholder="e.g. 36.6"
+            aria-describedby="form-message"
+          />
+        </div>
+
+        <div class="field field-unit">
+          <label for="unit">Unit</label>
+          <div class="select-wrap">
+            <select id="unit" name="unit">
+              <option value="celsius" selected>Celsius (°C)</option>
+              <option value="fahrenheit">Fahrenheit (°F)</option>
+              <option value="kelvin">Kelvin (K)</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-convert" id="convert-btn">
+          Convert
+        </button>
+      </form>
+
+      <!-- ---------- Message ---------- -->
+      <p class="message" id="form-message" role="status" aria-live="polite"></p>
+
+      <!-- ---------- Results ---------- -->
+      <section class="results" id="results" aria-label="Conversion results">
+        <article class="result" data-unit="celsius">
+          <p class="result-label">Celsius</p>
+          <p class="result-value"><span class="number" data-out="celsius">—</span><span class="unit">°C</span></p>
+        </article>
+
+        <article class="result" data-unit="fahrenheit">
+          <p class="result-label">Fahrenheit</p>
+          <p class="result-value"><span class="number" data-out="fahrenheit">—</span><span class="unit">°F</span></p>
+        </article>
+
+        <article class="result" data-unit="kelvin">
+          <p class="result-label">Kelvin</p>
+          <p class="result-value"><span class="number" data-out="kelvin">—</span><span class="unit">K</span></p>
+        </article>
+      </section>
+
+      <!-- ---------- Footer notes ---------- -->
+      <footer class="converter-foot">
+        <div class="formula">
+          <p><span>°F</span> = (°C × 9/5) + 32</p>
+          <p><span>K</span> = °C + 273.15</p>
+        </div>
+        <p class="hint">Absolute zero is −273.15 °C · −459.67 °F · 0 K</p>
+      </footer>
+
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

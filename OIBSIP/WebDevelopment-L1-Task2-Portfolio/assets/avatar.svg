@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420" width="420" height="420" role="img" aria-label="Abstract portrait placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1B2230"/>
+      <stop offset="100%" stop-color="#0E1116"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4ADE80"/>
+      <stop offset="100%" stop-color="#22A55A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="420" height="420" rx="32" fill="url(#bg)"/>
+  <circle cx="210" cy="210" r="168" fill="none" stroke="#4ADE80" stroke-opacity=".18" stroke-width="2"/>
+  <circle cx="210" cy="210" r="132" fill="#4ADE80" opacity=".07"/>
+
+  <!-- shoulders -->
+  <path d="M96 420c0-74 51-124 114-124s114 50 114 124Z" fill="url(#accent)" opacity=".9"/>
+  <path d="M150 420c0-52 27-86 60-86s60 34 60 86Z" fill="#0E1116" opacity=".35"/>
+
+  <!-- head -->
+  <circle cx="210" cy="196" r="76" fill="#E8EAED"/>
+  <path d="M134 186c0-48 34-78 76-78s76 30 76 78c-14-10-30-18-48-20-22-3-46 2-66 12-14 7-25 12-38 8Z" fill="#1B2230"/>
+
+  <!-- glasses -->
+  <g fill="none" stroke="#1B2230" stroke-width="6">
+    <rect x="158" y="188" width="44" height="34" rx="10"/>
+    <rect x="218" y="188" width="44" height="34" rx="10"/>
+    <path d="M202 202h16"/>
+  </g>
+
+  <!-- smile -->
+  <path d="M188 250c10 10 34 10 44 0" fill="none" stroke="#1B2230" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- code badge -->
+  <g transform="translate(292 300)">
+    <circle cx="28" cy="28" r="28" fill="#0E1116" stroke="#4ADE80" stroke-width="2"/>
+    <text x="28" y="34" text-anchor="middle" font-family="monospace" font-size="16" fill="#4ADE80">&lt;/&gt;</text>
+  </g>
+</svg>

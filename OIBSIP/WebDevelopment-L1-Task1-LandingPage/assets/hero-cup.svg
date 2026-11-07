@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" width="520" height="520" role="img" aria-label="Illustration of a steaming coffee cup on a saucer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F2E7D5"/>
+      <stop offset="100%" stop-color="#E4D3B8"/>
+    </linearGradient>
+    <linearGradient id="cup" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FAF3E7"/>
+      <stop offset="100%" stop-color="#E7D8C1"/>
+    </linearGradient>
+    <linearGradient id="brew" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8B5E3C"/>
+      <stop offset="100%" stop-color="#4A2E1D"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="260" cy="260" r="230" fill="url(#bg)"/>
+  <circle cx="260" cy="260" r="230" fill="none" stroke="#C08A4E" stroke-opacity=".35" stroke-width="2"/>
+  <circle cx="260" cy="260" r="186" fill="none" stroke="#C08A4E" stroke-opacity=".2" stroke-width="2"/>
+
+  <!-- steam -->
+  <g fill="none" stroke="#C08A4E" stroke-width="6" stroke-linecap="round" opacity=".85">
+    <path d="M206 168c-16-18 16-30 0-48s16-30 0-46"/>
+    <path d="M262 152c-16-18 16-30 0-48s16-30 0-46"/>
+    <path d="M318 168c-16-18 16-30 0-48s16-30 0-46"/>
+  </g>
+
+  <!-- saucer -->
+  <ellipse cx="260" cy="392" rx="176" ry="34" fill="#C08A4E" opacity=".28"/>
+  <ellipse cx="260" cy="382" rx="160" ry="30" fill="#FAF3E7"/>
+  <ellipse cx="260" cy="378" rx="120" ry="20" fill="#E7D8C1"/>
+
+  <!-- handle -->
+  <path d="M356 236h26a44 44 0 0 1 0 88h-26" fill="none" stroke="#E7D8C1" stroke-width="26" stroke-linecap="round"/>
+  <path d="M356 236h26a44 44 0 0 1 0 88h-26" fill="none" stroke="#FAF3E7" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- cup body -->
+  <path d="M140 214h240v52a104 104 0 0 1-104 104h-32a104 104 0 0 1-104-104v-52Z" fill="url(#cup)"/>
+  <ellipse cx="260" cy="214" rx="120" ry="26" fill="#E7D8C1"/>
+  <ellipse cx="260" cy="212" rx="104" ry="20" fill="url(#brew)"/>
+  <ellipse cx="232" cy="206" rx="34" ry="8" fill="#C08A4E" opacity=".35"/>
+
+  <!-- cup highlight -->
+  <path d="M172 250c0 54 22 96 62 112" fill="none" stroke="#FFFFFF" stroke-opacity=".55" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- beans -->
+  <g fill="#4A2E1D">
+    <ellipse cx="132" cy="352" rx="18" ry="13" transform="rotate(-24 132 352)"/>
+    <ellipse cx="398" cy="344" rx="18" ry="13" transform="rotate(18 398 344)"/>
+    <ellipse cx="368" cy="372" rx="16" ry="11" transform="rotate(-12 368 372)"/>
+  </g>
+  <g stroke="#C08A4E" stroke-width="2.5" stroke-linecap="round" fill="none">
+    <path d="M120 345c8 5 16 8 24 9"/>
+    <path d="M388 336c8 5 16 8 24 9"/>
+    <path d="M360 366c7 4 14 7 21 8"/>
+  </g>
+</svg>

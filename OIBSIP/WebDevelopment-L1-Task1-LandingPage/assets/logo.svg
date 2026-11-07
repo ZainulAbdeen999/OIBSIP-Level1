@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Kohva logo">
+  <rect width="64" height="64" rx="16" fill="#2B1B12"/>
+  <path d="M18 24h22v14a10 10 0 0 1-10 10h-2a10 10 0 0 1-10-10V24Z" fill="#FAF3E7"/>
+  <path d="M40 27h4a5 5 0 0 1 0 10h-4" fill="none" stroke="#C08A4E" stroke-width="3" stroke-linecap="round"/>
+  <path d="M24 14c0 3-3 3-3 6M31 14c0 3-3 3-3 6" fill="none" stroke="#C08A4E" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
