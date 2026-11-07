@@ -30,7 +30,9 @@ page.
 | GitHub profile | https://github.com/ZainulAbdeen999 |
 | Kohva landing page source | `OIBSIP/WebDevelopment-L1-Task1-LandingPage` in this repo |
 | Temperature Converter source | `OIBSIP/WebDevelopment-L1-Task3-TemperatureConverter` in this repo |
-| Task Board source | `OIBSIP/WebDevelopment-L2-Task2-TodoApp` in the main `OIBSIP` repo |
+| Portfolio website source | `OIBSIP/WebDevelopment-L1-Task2-Portfolio` in this repo |
+
+All project links stay inside this Level 1 repository.
 
 The LinkedIn and résumé buttons were removed because those URLs were still
 placeholders. Add them back in `index.html` (`.social-row`) once you have the real
@@ -49,7 +51,7 @@ the footer.
 | Hero with your name, role and avatar | `section.hero#home` — status pill, `h1` "Hi, I'm Zain —", role line, portrait photo |
 | About Me, 2–3 sentences | `section#about` — three sentences in two short paragraphs |
 | Skills shown as a visual grid | `.skills-grid` — 6 cards, responsive 3 → 2 → 1 columns |
-| At least 2 project cards with title, description, GitHub link | `.project-grid` — 3 cards (Kohva landing page, Temperature Converter, Task Board), each with tags and a "View source on GitHub →" link |
+| At least 2 project cards with title, description, GitHub link | `.project-grid` — 3 cards (Kohva landing page, Temperature Converter, Portfolio website), each with tags and a "View source on GitHub →" link |
 | Contact section with name and email | `section#contact` — name, email, location + GitHub button |
 | Smooth-scrolling navigation | `html { scroll-behavior: smooth }` + `scroll-margin-top` on each section |
 | Consistent colour scheme and fonts | Design tokens in `:root` — green accent on dark surfaces |
