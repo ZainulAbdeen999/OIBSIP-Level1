@@ -23,7 +23,7 @@ Everything needed to submit the three Level 1 tasks. Fill in the blanks marked
 Opening frame template:
 
 ```
-[Your Full Name]
+Zain ul Abdeen
 Web Development & Designing — Level 1
 Task [N]: [Task Title]
 ```
@@ -76,7 +76,7 @@ grid, project cards and contact details.
 🌡️ Task 3 — Temperature Converter: Celsius, Fahrenheit and Kelvin conversion with
 validation, absolute-zero warnings and all three results shown at once.
 
-🔗 Code: [YOUR GITHUB REPO LINK]
+🔗 Code: https://github.com/ZainulAbdeen999/OIBSIP-Level1
 
 Grateful to @Oasis Infobyte for the opportunity and the clear briefs.
 
