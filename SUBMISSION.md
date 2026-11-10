@@ -1,131 +1,84 @@
-# Submission Guide — OIBSIP Level 1
+# Submission
 
-Everything needed to submit the three Level 1 tasks. Fill in the blanks marked
-`[...]` before posting.
+Everything that is already done, and the three things only you can do.
 
----
+## Links
 
-## 1. Before recording
+| What | Link |
+|---|---|
+| Repository | https://github.com/ZainulAbdeen999/OIBSIP-Level1 |
+| Task 1 folder | https://github.com/ZainulAbdeen999/OIBSIP-Level1/tree/main/OIBSIP/WebDevelopment-L1-Task1-LandingPage |
+| Task 2 folder | https://github.com/ZainulAbdeen999/OIBSIP-Level1/tree/main/OIBSIP/WebDevelopment-L1-Task2-Portfolio |
+| Task 3 folder | https://github.com/ZainulAbdeen999/OIBSIP-Level1/tree/main/OIBSIP/WebDevelopment-L1-Task3-TemperatureConverter |
+| GitHub profile | https://github.com/ZainulAbdeen999 |
 
-- [ ] GitHub repository is **public** and named exactly `OIBSIP-Level1`
-- [ ] All three task folders are pushed with source, `README.md` and screenshots
-- [ ] LinkedIn profile is complete (headline, about, skills, photo)
-- [ ] Every project opened once in the browser and tested at 390 px + 1440 px
-- [ ] Portfolio GitHub links open the correct project folders
+The repository is public. I checked it in a browser without logging in.
 
----
+## Already done
 
-## 2. The 2-second rule
+- Three task folders with the source code, screenshots and a README each
+- Root README that explains the whole repository
+- All internal links checked, no broken paths
+- Temperature converter JavaScript passes `node --check`
+- Repository is pushed and up to date
 
-> **The first 2 seconds of every demo video must show your Full Name, Assigned Track
-> and Task Title as on-screen text.** Don't only say it — put it on the screen.
+## Three things left
 
-Opening frame template:
+### 1. Record the demo video
 
-```
-Zain ul Abdeen
-Web Development & Designing — Level 1
-Task [N]: [Task Title]
-```
+Use `video-script.md`. It has the full shot list and what to say. Open
+`title-card.html` for the opening frame so your name, track and task title are on
+screen in the first two seconds.
 
-Say it out loud as well: *"Hi, I'm [Your Full Name], and this is Task [N] of my Web
-Development and Designing internship at Oasis Infobyte."*
+One video of about two minutes is enough. If the form asks for one video per task,
+record three short clips using the same script and split it at the task sections.
 
----
+Upload it to LinkedIn as a native video, not as a YouTube link.
 
-## 3. Level 1 demo script (3 tasks, ~2 minutes)
+### 2. Post on LinkedIn
 
-| Time | Show | Say |
-|---|---|---|
-| 0:00 | Title card | Name · Track · Task 1: Landing Page |
-| 0:03 | Repo folder structure | "All Level 1 tasks live in one public repository called OIBSIP-Level1." |
-| 0:12 | Kohva landing page, desktop | "Task 1 is a landing page for a fictional coffee brand, HTML and CSS only." |
-| 0:25 | Scroll through sections | "Sticky navbar, hero with a call to action, features, story, testimonials, contact footer." |
-| 0:40 | Device toolbar, 390 px | "At mobile width the menu collapses and nothing scrolls sideways." |
-| 0:50 | Portfolio | "Task 2 is my portfolio: hero, about, skills grid, project cards and contact." |
-| 1:05 | Click nav links | "Navigation scrolls smoothly to each section." |
-| 1:15 | Temperature converter | "Task 3 converts Celsius, Fahrenheit and Kelvin." |
-| 1:22 | Type `100` → Convert | "100 Celsius gives 212 Fahrenheit and 373.15 Kelvin." |
-| 1:32 | Type `abc` | "Non-numeric input is rejected with a clear message." |
-| 1:42 | Type `-300` Celsius | "And anything below absolute zero gets a warning." |
-| 1:52 | Closing frame | "Thanks for watching — code link is in the post." |
+Copy the text from `linkedin-post.txt`. Before posting:
 
-### Recording tips
+- Tag the official **@Oasis Infobyte** page from the mention dropdown
+- Put the repository link in the post and again in the first comment
+- Make sure the post visibility is **Public**, not connections only
+- Upload the video file itself
 
-- 1080p, landscape, 30 fps; zoom the browser to 110–125% so text is readable.
-- Use the device toolbar (`Ctrl + Shift + M`) for mobile demos instead of resizing the window.
-- Keep cursor movement slow and deliberate.
+After posting, copy the post URL. You need it for the form.
 
----
+### 3. Fill the submission form
 
-## 4. LinkedIn post
+The form is linked in your orientation or offer letter email. Use these values:
 
-```
-🚀 Oasis Infobyte Internship — Web Development & Designing (Level 1)
+| Field | Value |
+|---|---|
+| Full name | Zain ul Abdeen |
+| Email | use the email you registered with |
+| Track | Web Development & Designing |
+| Level | 1 |
+| GitHub repository | https://github.com/ZainulAbdeen999/OIBSIP-Level1 |
+| LinkedIn post URL | paste the URL of your post |
 
-All three Level 1 tasks are complete. Every project is built with plain HTML, CSS
-and JavaScript — no frameworks — in one public repository.
+## Also required
 
-🍵 Task 1 — Landing Page: "Kohva Coffee Co.", a responsive landing page with a
-sticky navbar, a CSS-only mobile menu, feature cards, testimonials and a contact
-footer.
+Leave at least two real comments on other interns' videos. Short "great work"
+comments do not count. Pick a specific detail and ask a question about it. Examples:
 
-👤 Task 2 — Personal Portfolio: a dark, minimal portfolio with hero, about, skills
-grid, project cards and contact details.
+> The mobile menu on your landing page opens smoothly. Did you animate the height
+> with a transition, or did you use a grid trick?
 
-🌡️ Task 3 — Temperature Converter: Celsius, Fahrenheit and Kelvin conversion with
-validation, absolute-zero warnings and all three results shown at once.
+> Your converter shows the absolute zero warning before converting. I checked the
+> value against each unit separately. Did you convert first and then check, or check
+> first like me?
 
-🔗 Code: https://github.com/ZainulAbdeen999/OIBSIP-Level1
+## Last check before you click submit
 
-Grateful to @Oasis Infobyte for the opportunity and the clear briefs.
-
-#oasisinfobyte #oasisinfobyteinternship #webdevelopment #webdesign #html #css
-#javascript #frontend #internship #buildinpublic
-```
-
-**Checklist for the post:**
-
-- [ ] Tag **@Oasis Infobyte** (choose the official page from the mention dropdown)
-- [ ] Include `#oasisinfobyte` plus domain hashtags
-- [ ] Upload the demo video natively (not just a link)
-- [ ] Put the GitHub repository link in the post body **and** the first comment
-- [ ] Confirm the post is public, not "connections only"
-
----
-
-## 5. Comment on other interns' videos
-
-At least **2 meaningful comments** — "Great work" does not count. Reference something
-specific and ask a real question.
-
-> "Nice job on the sticky navbar — the blur behind it keeps the text readable while
-> scrolling. Did you use `backdrop-filter`, or a semi-transparent background?"
-
-> "Your converter's error state is really clear. Curious how you handled the
-> absolute-zero edge case for Kelvin — did you validate before or after converting?"
-
----
-
-## 6. Task Submission Form
-
-Open the form linked in your orientation / offer letter email and submit:
-
-- [ ] Full name
-- [ ] Email used for the internship
-- [ ] Assigned track: **Web Development & Designing**
-- [ ] Level: **1**
-- [ ] GitHub repository URL: `https://github.com/ZainulAbdeen999/OIBSIP-Level1`
-- [ ] LinkedIn post URL
-- [ ] Any additional fields the form asks for
-
----
-
-## 7. Final pre-submit check
-
-- [ ] Repository opens in an incognito window (truly public)
-- [ ] No broken relative paths (`css/style.css`, `js/script.js`, `assets/*`)
-- [ ] Every task folder has a `README.md` and screenshots
-- [ ] Each video's first 2 seconds show name + track + task title
-- [ ] LinkedIn post tags Oasis Infobyte and uses `#oasisinfobyte`
-- [ ] Two thoughtful comments left on other interns' videos
+- [ ] Repository opens in an incognito window
+- [ ] All three folders are visible on GitHub
+- [ ] Each task folder has screenshots
+- [ ] Video starts with your name, track and task title on screen
+- [ ] LinkedIn post is public and tags Oasis Infobyte
+- [ ] Repository link is in the post and in the first comment
+- [ ] Post URL copied correctly
+- [ ] Two comments left on other interns' videos
+- [ ] Form submitted and confirmation screenshot saved

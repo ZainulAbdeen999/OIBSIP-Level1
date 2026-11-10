@@ -1,103 +1,93 @@
-# Personal Portfolio — Zain ul Abdeen
+# Task 2: Personal Portfolio
 
-**OIBSIP Level 1 · Task 2 · Web Development & Designing**
+**OIBSIP Level 1, Web Development & Designing**
 
-A dark, minimal personal portfolio that works like a digital résumé: name and role,
-a short About Me, a skills grid, project cards and contact details in one scrolling
-page.
+This is my portfolio page. It is a single scrolling page with my name, a short about
+section, my skills, my projects and my contact details. I kept it dark and simple so
+the text is easy to read.
 
-**Tech:** HTML5 + CSS3 only — no JavaScript, no frameworks, no build step.
+**Tech:** HTML and CSS only. No JavaScript, no framework.
 
----
+## How to view it
 
-## What is already personalised
+Open `index.html` in a browser. Test it at 1440px and 390px wide, or use the device
+toolbar in DevTools.
 
-| Item | Value used |
+## What is on the page
+
+| Section | Content |
 |---|---|
-| Name | **Zain ul Abdeen** |
-| Brand mark / favicon | **ZA** |
-| Email | **zainulabdeenz786@gmail.com** (`mailto:` links) |
-| Photo | `assets/IMG-20260407-WA0001.jpg` (768 × 1279 portrait) |
-| Role | Front-end developer from Lahore |
-| Location | Lahore, Pakistan |
+| Hero | Status pill, "Hi, I'm Zain", role line and my photo |
+| About | Three sentences about me and what I work with |
+| Skills | Six cards in a responsive grid (3 columns, then 2, then 1) |
+| Projects | Three cards: Kohva landing page, Temperature Converter and this portfolio, each with a GitHub link |
+| Contact | My name, email, location and a GitHub button |
+| Footer | Back to top link |
 
----
+## What the task asked for
 
-## Links used
-
-| Item | Link |
+| Requirement | Where it is in the code |
 |---|---|
-| GitHub profile | https://github.com/ZainulAbdeen999 |
-| Kohva landing page source | `OIBSIP/WebDevelopment-L1-Task1-LandingPage` in this repo |
-| Temperature Converter source | `OIBSIP/WebDevelopment-L1-Task3-TemperatureConverter` in this repo |
-| Portfolio website source | `OIBSIP/WebDevelopment-L1-Task2-Portfolio` in this repo |
+| Hero with name, role and photo | `section.hero#home` |
+| About Me, 2 to 3 sentences | `section#about` |
+| Skills as a visual grid | `.skills-grid` |
+| At least 2 project cards with title, description and GitHub link | `.project-grid`, three cards |
+| Contact section with name and email | `section#contact` |
+| Smooth scrolling navigation | `scroll-behavior: smooth` and `scroll-margin-top` |
+| One colour scheme and font pair | Variables in `:root`, Space Grotesk and Inter |
+| Responsive on desktop and mobile | Breakpoints at 980px, 780px and 640px, CSS only mobile menu |
 
-All project links stay inside this Level 1 repository.
-
-The LinkedIn and résumé buttons were removed because those URLs were still
-placeholders. Add them back in `index.html` (`.social-row`) once you have the real
-links.
-
-If you change the name or initials, also update the `<title>`, the
-`<meta name="description">`, the hero `h1`, the About Me copy, the contact name and
-the footer.
-
----
-
-## Required features checklist (from the brief)
-
-| Requirement | Where it is implemented |
-|---|---|
-| Hero with your name, role and avatar | `section.hero#home` — status pill, `h1` "Hi, I'm Zain —", role line, portrait photo |
-| About Me, 2–3 sentences | `section#about` — three sentences in two short paragraphs |
-| Skills shown as a visual grid | `.skills-grid` — 6 cards, responsive 3 → 2 → 1 columns |
-| At least 2 project cards with title, description, GitHub link | `.project-grid` — 3 cards (Kohva landing page, Temperature Converter, Portfolio website), each with tags and a "View source on GitHub →" link |
-| Contact section with name and email | `section#contact` — name, email, location + GitHub button |
-| Smooth-scrolling navigation | `html { scroll-behavior: smooth }` + `scroll-margin-top` on each section |
-| Consistent colour scheme and fonts | Design tokens in `:root` — green accent on dark surfaces |
-| Fully responsive (desktop + mobile) | Breakpoints at 980px, 780px and 640px; CSS-only checkbox mobile menu |
-
----
-
-## Structure
+## Files
 
 ```
 WebDevelopment-L1-Task2-Portfolio/
 ├── index.html
 ├── css/style.css
 ├── assets/
-│   ├── IMG-20260407-WA0001.jpg   # portrait photo
-│   └── favicon.svg               # ZA monogram
+│   ├── IMG-20260407-WA0001.jpg   my photo
+│   └── favicon.svg               ZA monogram
 ├── screenshots/
 └── README.md
 ```
 
----
+## Links used
 
-## Design notes
+| Item | Link |
+|---|---|
+| GitHub profile | https://github.com/ZainulAbdeen999 |
+| Task 1 source | `OIBSIP/WebDevelopment-L1-Task1-LandingPage` |
+| Task 2 source | `OIBSIP/WebDevelopment-L1-Task2-Portfolio` |
+| Task 3 source | `OIBSIP/WebDevelopment-L1-Task3-TemperatureConverter` |
 
-- **Palette:** background `#0E1116`, surface `#171D27`, text `#E8EAED`, accent `#4ADE80`.
-- **Fonts:** Space Grotesk for headings, Inter for body.
-- **Nav:** sticky, blurred header; `scroll-margin-top` stops the header from covering
-  section headings when a nav link is clicked.
-- **Mobile menu:** CSS-only checkbox toggle (same pattern as the landing page), so the
-  page stays JavaScript-free.
-- **Mobile hero:** the copy comes first and the portrait stacks below it, so the name
-  and role are visible without scrolling.
-- **Accessibility:** visible focus rings, `aria-label`s on icon-only links, decorative
-  SVG marked `aria-hidden`, `prefers-reduced-motion` respected.
+All three project cards link to folders inside this same repository.
 
----
+## A few design choices
 
-## How to view
+- Colours: background `#0E1116`, cards `#171D27`, text `#E8EAED`, green accent
+  `#4ADE80`.
+- The header is sticky and slightly blurred. `scroll-margin-top` on the sections
+  stops it from covering a heading after you click a nav link.
+- On mobile the hero text comes first and the photo goes below it, so my name is
+  visible without scrolling.
+- Icon only links have `aria-label`. Decorative SVG is marked `aria-hidden`.
 
-Open `index.html` directly in a browser — no server needed. Test at 1440px and 390px
-wide (or use the DevTools device toolbar).
+## What was difficult
 
----
+Getting the mobile hero order right. In my first version the photo came first and
+you had to scroll to see the name, which looked wrong on a phone. I used `order` in
+the media query to put the text above the photo.
 
-## Screenshots to capture
+The sticky header was the second problem. I fixed it with `scroll-margin-top` on
+every section instead of adding JavaScript.
 
-1. `screenshots/desktop-full.png` — 1440px wide
-2. `screenshots/mobile-full.png` — 390px wide
-3. `screenshots/contact-section.png` — close-up of the contact area
+## If I had more time
+
+- Add a real LinkedIn button and a downloadable resume.
+- Add a fourth project card once I finish something new.
+- Add a light theme switch. That would need JavaScript, so I left it out for now.
+
+## Note
+
+The LinkedIn and resume buttons are not in the page yet because I did not want them
+to point to empty profiles. When I have the real links I will add them in the
+`.social-row` block in `index.html`.

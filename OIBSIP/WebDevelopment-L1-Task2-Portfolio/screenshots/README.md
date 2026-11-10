@@ -1,12 +1,12 @@
 # Screenshots
 
-Captured from the live page with headless Chrome.
+Taken from the page at desktop and mobile width.
 
-- `desktop-full.png` — full page at 1440px wide
-- `mobile-full.png` — full page at 390px wide
-- `contact-section.png` — contact area close-up
-- `secreen.pdf` — original PDF preview supplied with the project
+- `desktop-full.png`: full page at 1440px wide
+- `mobile-full.png`: full page at 390px wide
+- `contact-section.png`: close up of the contact section
+- `screen-preview.pdf`: PDF preview of the page
 
-To re-capture: open `index.html` in Chrome/Edge, press `F12` → `Ctrl + Shift + P`
-→ **"Capture full size screenshot"**. Use the device toolbar (`Ctrl + Shift + M`)
-for the mobile width.
+If you want to take them again: open `index.html` in Chrome or Edge, press `F12`,
+then `Ctrl + Shift + P` and type "Capture full size screenshot". Use the device
+toolbar (`Ctrl + Shift + M`) for the mobile width.

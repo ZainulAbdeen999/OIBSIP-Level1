@@ -1,0 +1,15 @@
+Assalam o Alaikum everyone,
+
+I have finished the Level 1 tasks of my Web Development and Designing internship at Oasis Infobyte. All three projects are in one public GitHub repository, built with plain HTML, CSS and JavaScript. No frameworks.
+
+Task 1 is a landing page for a coffee brand I made up, called Kohva Coffee Co. It has a sticky navbar, a mobile menu that works without JavaScript, and a layout that holds up from 320px to 1440px.
+
+Task 2 is my portfolio. Dark theme, a short about section, my skills, three project cards and my contact details.
+
+Task 3 is a temperature converter for Celsius, Fahrenheit and Kelvin. It shows all three results at once, rejects text input with a clear message, and warns you when a value is below absolute zero.
+
+Repository: https://github.com/ZainulAbdeen999/OIBSIP-Level1
+
+Thanks to @Oasis Infobyte for the briefs. Any feedback is welcome, I am still learning.
+
+#oasisinfobyte #oasisinfobyteinternship #webdevelopment #webdesign #html #css #javascript #frontend #internship

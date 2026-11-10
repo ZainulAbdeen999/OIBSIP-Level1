@@ -1,12 +1,11 @@
 # Screenshots
 
-Captured from the live page with headless Chrome.
+Taken from the page after converting values.
 
-- `desktop-result.png` — 100 °C converted, desktop width
-- `mobile-result.png` — same state at 390px wide
-- `error-state.png` — non-numeric input showing the error
-- `absolute-zero-warning.png` — warning message visible
+- `desktop-result.png`: 100 °C converted, desktop width
+- `mobile-result.png`: the same result at 390px wide
+- `error-state.png`: text input showing the error message
+- `absolute-zero-warning.png`: warning for a value below absolute zero
 
-To re-capture: open `index.html` in Chrome/Edge, press `F12` → `Ctrl + Shift + P`
-→ **"Capture full size screenshot"**. Use the device toolbar (`Ctrl + Shift + M`)
-for the mobile width.
+If you want to take them again: open `index.html` in Chrome or Edge, press `F12`,
+then `Ctrl + Shift + P` and type "Capture full size screenshot".

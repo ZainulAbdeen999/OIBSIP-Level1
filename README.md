@@ -1,107 +1,98 @@
-# OIBSIP — Level 1 Submission
+# OIBSIP Level 1
 
-**Track:** Web Development & Designing
-**Level:** 1 (Basic) — three projects
 **Name:** Zain ul Abdeen
+**Track:** Web Development & Designing
+**Level:** 1
 
-Three hand-built, fully responsive projects using **HTML5, CSS3 and vanilla
-JavaScript**. No frameworks, no build tools — every project runs by opening its
-`index.html` in a browser.
+This repository has my three Level 1 tasks. All of them are built with plain HTML,
+CSS and JavaScript. There is no framework and no build step. You can open any
+`index.html` file directly in a browser and it will work.
 
----
+## The three tasks
 
-## Projects
+| # | Task | What it is | Folder |
+|---|---|---|---|
+| 1 | Landing Page | Kohva Coffee Co., a landing page for a fictional coffee brand | [`OIBSIP/WebDevelopment-L1-Task1-LandingPage`](./OIBSIP/WebDevelopment-L1-Task1-LandingPage) |
+| 2 | Personal Portfolio | My own one page portfolio | [`OIBSIP/WebDevelopment-L1-Task2-Portfolio`](./OIBSIP/WebDevelopment-L1-Task2-Portfolio) |
+| 3 | Temperature Converter | Celsius, Fahrenheit and Kelvin converter with validation | [`OIBSIP/WebDevelopment-L1-Task3-TemperatureConverter`](./OIBSIP/WebDevelopment-L1-Task3-TemperatureConverter) |
 
-| # | Task | Project | Tech | Folder |
-|---|---|---|---|---|
-| 1 | Landing Page | **Kohva Coffee Co.** — a fictional small-batch coffee roastery | HTML5 + CSS3 | [`WebDevelopment-L1-Task1-LandingPage`](./OIBSIP/WebDevelopment-L1-Task1-LandingPage) |
-| 2 | Personal Portfolio | **Zain ul Abdeen** — digital résumé portfolio | HTML5 + CSS3 | [`WebDevelopment-L1-Task2-Portfolio`](./OIBSIP/WebDevelopment-L1-Task2-Portfolio) |
-| 3 | Temperature Converter | **°C / °F / K** converter with validation | HTML5 + CSS3 + JS | [`WebDevelopment-L1-Task3-TemperatureConverter`](./OIBSIP/WebDevelopment-L1-Task3-TemperatureConverter) |
+Every task folder has its own README with the features, the files and some notes on
+what was difficult and what I would change.
 
-Each folder contains its own `README.md` with a feature checklist, test steps and
-screenshots.
+## How to open
 
----
+Double click the `index.html` file inside any task folder. That is it.
 
-## Run locally
-
-No installation required — open any `index.html` directly:
+If you want to run it from a local server instead:
 
 ```bash
-# Windows
-start OIBSIP/WebDevelopment-L1-Task1-LandingPage/index.html
-
-# or serve the whole repo
 python -m http.server 5500
-# then visit http://localhost:5500/OIBSIP/
 ```
 
----
+Then go to `http://localhost:5500/OIBSIP/`.
 
-## What each project demonstrates
+## What is inside each task
 
-**1. Landing Page — Kohva Coffee Co.**
-Sticky navbar with four working anchors and a CSS-only mobile menu, hero with two
-CTAs, Features / Story / Testimonials sections and a contact footer. Design tokens in
-`:root`, `clamp()` typography, Grid + Flexbox, breakpoints at 960 / 780 / 620 px.
+**Task 1, Kohva Coffee Co.**
+A coffee landing page. Sticky navbar with four links, a hero section with two
+buttons, features, a story section, testimonials and a contact footer. The mobile
+menu opens without any JavaScript, using a hidden checkbox. The layout has
+breakpoints at 960px, 780px and 620px.
 
-**2. Personal Portfolio**
-Dark theme with hero, status pill, About, six-card skills grid, three project cards,
-contact section and social buttons. Smooth scrolling with `scroll-margin-top` so the
-sticky header never covers a heading. The hero stacks copy first on mobile so the
-name and role are visible without scrolling.
+**Task 2, Portfolio**
+My portfolio page. Dark background, a hero with my photo, an about section, six
+skill cards, three project cards and a contact section. The header is sticky and
+the links scroll smoothly to each section. I added `scroll-margin-top` so the
+header does not cover the headings when you jump to a section.
 
-**3. Temperature Converter**
-Celsius / Fahrenheit / Kelvin input, all three outputs shown at once, empty and
-non-numeric input rejected, absolute-zero warning, Enter-key support and live
-re-conversion when the unit changes.
+**Task 3, Temperature Converter**
+You type a temperature, pick the unit and press convert. All three units are shown
+at the same time. Empty input and text input are rejected with a message. Values
+below absolute zero show a warning. Pressing Enter works too, and changing the unit
+re-converts the current number.
 
----
+## Things I checked before submitting
 
-## Quality checklist
+- Semantic tags: `header`, `nav`, `main`, `section`, `footer`
+- Colours are defined once in `:root` and reused
+- Tested down to 320px wide, no horizontal scroll
+- Focus rings are visible when using the keyboard
+- `prefers-reduced-motion` is respected
+- No console errors, and `node --check` passes on the JS
+- Screenshots for desktop and mobile are inside each task folder
 
-- [x] Semantic HTML5 landmarks (`header`, `nav`, `main`, `section`, `footer`)
-- [x] Consistent colour palette driven by CSS custom properties
-- [x] Responsive layouts tested down to 320 px
-- [x] No overlapping elements; intentional padding, margin and `box-sizing`
-- [x] Visible focus states for keyboard users
-- [x] `prefers-reduced-motion` respected
-- [x] No horizontal scrolling at any width
-- [x] No console errors; JS passes `node --check`
-- [x] Screenshots included for desktop and mobile
-
----
-
-## Folder structure
+## Folder layout
 
 ```
 OIBSIP-Level1/
-├── README.md                     ← this file
-├── SUBMISSION.md                 ← demo script, LinkedIn caption, form checklist
-├── .gitignore
+├── README.md
+├── SUBMISSION.md            submission steps and the LinkedIn caption
+├── SUBMIT-NOW.md            the short version: links and form fields
+├── video-script.md          what to show and say in the demo video
+├── title-card.html          full screen title card for the video
+├── linkedin-post.txt        caption ready to copy
 └── OIBSIP/
     ├── WebDevelopment-L1-Task1-LandingPage/
     ├── WebDevelopment-L1-Task2-Portfolio/
     └── WebDevelopment-L1-Task3-TemperatureConverter/
 ```
 
-Every task folder follows the same shape:
+Each task folder follows the same pattern:
 
 ```
 <task folder>/
-├── index.html          # entry point
+├── index.html
 ├── css/style.css
-├── js/                 # only where JavaScript is used
-├── assets/             # images, SVG icons
+├── js/                 only in Task 3
+├── assets/
 ├── screenshots/
 └── README.md
 ```
 
----
+## Note
 
-## Notes
+Kohva Coffee Co. is a made up brand, only for this task. The phone number, address
+and social links on that page are placeholders.
 
-Kohva Coffee Co. is a **fictional brand** created for the internship task. The
-portfolio is personalised for **Zain ul Abdeen**; the LinkedIn and résumé buttons
-were removed because those URLs were placeholders — add them back once the real
-links are available.
+The portfolio is about me. I removed the LinkedIn and resume buttons from it
+because I did not want to link to empty profiles. I can add them later.
