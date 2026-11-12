@@ -73,9 +73,10 @@ All three project cards link to folders inside this same repository.
 
 ## What was difficult
 
-Getting the mobile hero order right. In my first version the photo came first and
-you had to scroll to see the name, which looked wrong on a phone. I used `order` in
-the media query to put the text above the photo.
+Getting the mobile hero order right. My first version had the photo first in the
+HTML, so on a phone you had to scroll before you saw my name. I moved the text block
+above the photo in the HTML. When the grid collapses to one column at 980px the text
+stacks first, so no `order` property is needed.
 
 The sticky header was the second problem. I fixed it with `scroll-margin-top` on
 every section instead of adding JavaScript.

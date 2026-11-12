@@ -33,6 +33,9 @@ screen in the first two seconds.
 One video of about two minutes is enough. If the form asks for one video per task,
 record three short clips using the same script and split it at the task sections.
 
+Before recording, read `practice-questions.md`. It has short answers for the usual
+"how did you build this" questions, so you are not caught out on camera.
+
 Upload it to LinkedIn as a native video, not as a YouTube link.
 
 ### 2. Post on LinkedIn

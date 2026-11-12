@@ -49,19 +49,24 @@ WebDevelopment-L1-Task1-LandingPage/
 ## What was difficult
 
 The mobile menu without JavaScript took the most time. I had to place the checkbox
-before the nav in the HTML so the `:checked` selector could reach it, and then
-animate the panel height. My first version did not close when you clicked a link,
-so I added a second checkbox state that closes it.
+before the nav in the HTML so the `:checked ~ .site-nav` selector could reach it,
+then animate `max-height` from 0 to 320px. My first attempt animated `height`, which
+does not work when the height is `auto`.
 
 The other thing was the sticky header covering section headings when you click a nav
 link. `scroll-margin-top` on the sections fixed it.
 
+One thing still does not work: on mobile, clicking a link does not close the menu
+again. Doing that cleanly needs JavaScript, and the brief asked for HTML and CSS
+only, so I left it. See the next section for how I would fix it.
+
 ## If I had more time
 
+- Close the mobile menu when a link is clicked. I would switch from the checkbox to
+  the `:target` pattern, where each nav link changes the URL fragment and the menu
+  only stays open while `#menu` is the target.
 - Replace the placeholder social links in the footer with real ones.
 - Add a real contact form instead of just an email link.
-- Try the same page with one or two small JavaScript touches, like a scroll progress
-  bar, to compare the two approaches.
 
 ## Screenshots
 

@@ -71,6 +71,7 @@ OIBSIP-Level1/
 ├── video-script.md          what to show and say in the demo video
 ├── title-card.html          full screen title card for the video
 ├── linkedin-post.txt        caption ready to copy
+├── practice-questions.md    short answers for demo day questions
 └── OIBSIP/
     ├── WebDevelopment-L1-Task1-LandingPage/
     ├── WebDevelopment-L1-Task2-Portfolio/
